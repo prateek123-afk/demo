@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>video compressor</title>
+</head>
+<body>
+    <script type="module" src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <h1>Video Compressor</h1>
+    <form id="videoForm" action="http://localhost:5000/api/compress" method="post" enctype="multipart/form-data">
+        <input type="file"  id="videoInput" name="video" accept="video/*" required>
+        <button type="submit" onclick="uploadVideo()">Compress Video</button>
+        <p id="status"></p>
+
+    </form>
+</body>
+</html>
